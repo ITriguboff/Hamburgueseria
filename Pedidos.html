@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="styles/style-pedidos.css">
+    <link rel="stylesheet" href="js\index.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css'>
+  
+    <title>burger Worlds</title>
+</head>
+<body>
+</section class="form-register">
+
+<form action="procesar.php" method="post" autocomplete="on" target="_blank">
+
+    <h3>Realizar pedido</h3>
+    <input class="controls" type="text" name="nombres" id="nombres" required placeholder="Ingrese su Nombre">
+    <input class="controls" type="text" name="apellidos" id="apellidos" required placeholder="Ingrese su Apellido">
+    <input class="controls" type="text" name="direccion" id="direccion" required placeholder="Ingrese su Direccion">
+    <input class="controls" type="tel" id="phone" name="phone" required placeholder="Ingrese su telefono &#9743 ">
+    <br>
+
+    <input type="radio" id="burgers" name="opcburger" value="NYC">
+    <label for="1">NYC</label>
+      <input type="radio" id="burgers" name="opcburger" value="MVD">
+    <label for="2">MVD</label>
+      <input type="radio" id="burgers" name="opcburger" value="ORY">
+    <label for="3">ORY</label>
+      <input type="radio" id="burgers" name="opcburger" value="FCO">
+    <label for="4">FCO</label>
+      <input type="radio" id="burgers" name="opcburger" value="MAD">
+    <label for="5">MAD</label>
+      <input type="radio" id="burgers" name="opcburger" value="PEK">
+    <label for="6">PEK</label>
+      <input type="radio" id="burgers" name="opcburger" value="EZE">
+    <label for="7">EZE</label>
+      <input type="radio" id="burgers" name="opcburger" value="BOG">
+    <label for="8">BOG</label>
+   <br><br>
+
+
+    <label for="comentarios" ><strong> Comentarios :</strong><br>
+        <textarea name="comentarios" id="comentarios" cols="50" rows="3" maxlength="500"></textarea>
+    </label><br>
+    <p ><input type="checkbox" >Estoy de acuerdo con <a style="text-decoration: none;
+        color: blanchedalmond;" href="terminoscondiciones.html" target="_blank">Terminos y Condiciones</a></p>
+    <input class="botons" type="submit" value="Realizar pedido ">
+    <input type="reset" value="Limpiar pedido &#9785">
+  
+
+
+
+
+</form>
+<p style="text-align: center;">
+    <a href="index.html">Volver a Inicio</a>
+</p>
+</body>
+</html>
