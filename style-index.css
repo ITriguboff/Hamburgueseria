@@ -1,0 +1,260 @@
+
+body{
+ 
+  background: rgb(120,255,214);
+  background: radial-gradient(circle, rgba(120,255,214,1) 33%, rgba(0,121,145,1) 75%, rgba(1,82,73,0.9107842966288078) 100%); 
+}
+
+.texto{
+  padding: 1%;
+   border-style: groove;
+  border-color: #77c9d431;
+  text-align: center;
+}
+code {
+  background-color: #77c9d4;
+}
+.contentWrap {
+  padding: 2em;
+}
+.content {
+  width: 650px;
+  margin: 0 auto;
+  min-height: 1250px;
+  line-height: 1.5em;
+}
+h1 {
+  font-size: 2em;
+  line-height: 2em;
+}
+
+/*** Styles for the main header ***/
+	#main {
+	  background-color: #015249 
+    ;
+	  position: relative;
+	  z-index: 1001;
+	}
+  ul.nav {
+    padding-left: 0;
+  }
+	ul.nav {
+	  width: 650px;
+	  margin: 0 auto;
+	  overflow: hidden;
+	}
+	ul.nav li {
+	  float: left;
+	  list-style: none;
+	  margin: .5em .5em .5em 0;
+	  padding: .5em .5em .5em 0;
+	  font-size: 1.5em;
+	}
+	ul.nav li a {
+	  text-decoration: none;
+	  color: #77c9d4;
+	}
+	ul.nav li a:hover {
+	  color: #0c8174;
+    text-shadow: 0 0 2px #0d9181, 0 0 2px #0d9181,0 0 2px #0d9181,0 0 2px #0d9181;
+	  transition: color 400ms ease-out;
+	}
+
+  
+  
+    .icon-stack {
+      -webkit-animation: blink 5s linear infinite;
+      -moz-animation: blink 7s linear infinite;
+      animation: blink 9s linear infinite;
+    }
+   
+    @keyframes blink {  
+      0% { color: #015249; }
+      25% { color: #0c8174; }
+      50% { color: #57bc90; }
+      75% { color: #0c8174; }
+      100% { color: #015249; }
+    }
+    @-webkit-keyframes blink {
+      0% { color: #015249; }
+      25% { color: #0c8174; }
+      50% { color: #57bc90; }
+      75% { color: #0c8174; }
+      100% { color: #015249; }
+    }
+     
+
+
+/*** Styles for the sticky header ***/
+  #stickyContent {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 1;
+    z-index: 1000;
+    
+    padding: -1px;
+     ;
+    ;
+  }
+  #stickyContent ul.nav li {
+    font-size: 1em;
+  }
+  #stickyContent ul.nav a {
+    color: #77c9d4;
+  }
+  #stickyContent ul.nav .text{
+    display: none;
+  }
+
+/* carrousel*/
+
+
+  .nameburger{
+    text-align: center;
+    font-size: 20px;
+    padding: auto;
+    }
+
+
+  .container{
+    margin: auto;
+    background-color:linear-gradient(to right, #77c9d4, #57bc90
+    , #015249);  ;
+    width: 800px;
+    height: 300px;
+    padding: auto;
+    
+    
+  }
+  
+  ul, li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+     
+  }
+  
+  ul.slider{
+    position: relative;
+    width: 800px;
+    height: 300px;
+   
+  }
+  
+  ul.slider li {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      opacity: 0;
+      width: inherit;
+      height: inherit;
+      transition: opacity .15s;
+      background:rgba(255, 255, 255, 0);
+  }
+  
+  ul.slider li img{
+   
+   padding-left: 33%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit:contain ;
+    margin-top: 10%;/*baja img del top*/
+  }
+  
+  ul.slider li:first-child {
+      opacity: 0; /*Mostramos el primer <li>*/
+  }
+  
+  ul.slider li:target {
+      opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+  }
+  
+  .menu{
+    text-align: center;
+    margin: 70px;
+    margin-top: 23%;/*baja botonera de img*/
+  }
+  
+  .menu li{
+    display: inline-block;
+    text-align: center;
+    padding: 0px;
+  }
+  
+  .menu li a{
+   display: inline-table;   
+    color: #ffffff;
+    text-decoration: none;
+    background-color:  #015249a1;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 15px;
+    border-radius: 100%;
+    
+    
+  }
+
+/* efecto hover*/
+
+  .menu a svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  .menu a {
+    position: relative;
+  }
+
+  .menu a svg path {
+    fill: transparent;
+    stroke-width: 5px;
+    stroke: #050000;
+  }
+  .menu a svg path {
+    stroke-dasharray: 1210.709716796875;
+    stroke-dashoffset: -1210.709716796875; /*or the positive one*/
+    transition: stroke-dashoffset .5s cubic-bezier(.29,.68,.74,1.02);
+  }
+   
+  .menu a:hover svg path {
+    stroke-dashoffset: 0;
+  }
+
+/* fin efecto hover*/
+
+  .img {
+    float: top;
+    width: auto;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+     }
+   
+  
+/* fin de carrousel*/
+
+.slider{
+  position: relative;
+  display:inline-block;
+  text-align: justify;
+}
+
+
+.centrado{
+  position: relative;
+  top: 0px;
+  text-align: justify;
+  text-shadow: #77c9d4;
+  transition: 5ms;
+  padding-left: 20%;
+  margin: 2%;
+
+ 
+}
