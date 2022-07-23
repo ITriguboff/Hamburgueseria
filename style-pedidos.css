@@ -1,107 +1,128 @@
 
 body{
- padding: 10%;
-    background: rgb(120,255,214);
-    background: radial-gradient(circle, rgba(120,255,214,1) 33%, rgba(0,121,145,1) 75%, rgba(1,82,73,0.9107842966288078) 100%); 
-  }
+    padding: 10%;
+       background: rgb(120,255,214);
+       background: radial-gradient(circle, rgba(120,255,214,1) 33%, rgba(0,121,145,1) 75%, rgba(1,82,73,0.9107842966288078) 100%); 
+     }
+   
+   
+   form {
+       background-color: rgba(3, 0, 3, 0.404);
+       border: 1px outset;
+       box-sizing: border-box;
+       margin-left: auto;
+       margin-right: auto;
+       padding-left: auto;
+       padding-right: auto;
+       text-align: center;
+       width: 500px;
+       border-radius: 5%;
+       transform-box: initial;
+       box-shadow: 0 18px 16px 0 #57bc90, 0 17px 50px 0 #015249;
+       transform-origin: bottom;
+       transform: skew(40dg);
+   }
+   
+   form-register {
+       width: 200px;
+       background: #24303c;
+       padding: 30px;
+       margin: auto;
+       margin-top: 100px;
+       border-radius: 4px;
+       font-family: 'calibri';
+       color: white;
+       box-shadow: 7px 13px 37px #000;
+       border-radius: 20%;
+   }
+   
+   .form-register h4 {
+       font-size: 22px;
+       margin-bottom: 20px;
+       text-shadow: #f1a0bd;
+   }
+   .burgers{
+       display:grid;
+      padding-left : -5px;
+      padding-right: 10px;
 
-
-form {
-    background-color: rgba(3, 0, 3, 0.404);
-    border: 1px outset;
-    box-sizing: border-box;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: auto;
-    padding-right: auto;
-    text-align: center;
-    width: 500px;
-    border-radius: 5%;
-    transform-box: initial;
-    box-shadow: 0 18px 16px 0 #7894b1, 0 17px 50px 0 #788da1;
-    transform-origin: bottom;
-    transform: skew(40dg);
+   }
+   .controls {
+       width: 50%;
+       background: #24303ca2;
+       padding: 10px;
+       border-radius: 4px;
+       margin-bottom: 16px;
+       border: 1px solid #1f53c5;
+       font-family: 'calibri';
+       font-size: 18px;
+       color: white;
+       
+   }
+   
+   .form-register p {
+       height: 40px;
+       text-align: center;
+       font-size: 18px;
+       line-height: 40px;
+   }
+   
+   .form-register a {
+       color: rgb(255, 255, 255);
+       text-decoration: none;
+   }
+   
+   .form-register a:hover {
+       color: white;
+       text-decoration: underline;
+   }
+   
+   .form-register .botons {
+       width: 100%;
+       background: #1f53c5;
+       border: none;
+       padding: 12px;
+       color: rgb(255, 255, 255);
+       margin: 16px 0;
+       font-size: 16px;
+   }
+   
+   form.label {
+       text-align: justify;
+   
+   }
+   
+#comentarios{
+    background-color: rgba(255, 255, 255, 0.418);
 }
 
-form-register {
-    width: 200px;
-    background: #24303c;
-    padding: 30px;
-    margin: auto;
-    margin-top: 100px;
-    border-radius: 4px;
-    font-family: 'calibri';
-    color: white;
-    box-shadow: 7px 13px 37px #000;
-    border-radius: 20%;
-}
 
-.form-register h4 {
-    font-size: 22px;
-    margin-bottom: 20px;
-    text-shadow: #f1a0bd;
-}
-.burgers{
-    display:flex;
-    align-items: double;
-}
-.controls {
-    width: 50%;
-    background: #24303c;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 16px;
-    border: 1px solid #1f53c5;
-    font-family: 'calibri';
-    font-size: 18px;
-    color: white;
-}
+   .Volver{
+       text-decoration: none;
+       margin-left: 45%;
+       
+    }
 
-.form-register p {
-    height: 40px;
-    text-align: center;
-    font-size: 18px;
-    line-height: 40px;
-}
+   .Volver:hover{
+      color: #0c8174;
+      text-shadow: 0 0 2px #0d9181, 0 0 2px #0d9181,0 0 2px #0d9181,0 0 2px #0d9181;
+      transition: color 400ms ease-out;
+      text-decoration: none;
 
-.form-register a {
-    color: white;
-    text-decoration: none;
-}
+   }
+   
+   .terminos{
+       text-align: center;
+       font-size: 30px;
+   }
+   
+   .tituloterminos{
+       text-align: center;
+       text-shadow:2px 2px 2px 2px rgba(255, 255, 255, 0.438) ;
+       transition: color 400ms ease-out;
+   }
 
-.form-register a:hover {
-    color: white;
-    text-decoration: underline;
-}
 
-.form-register .botons {
-    width: 100%;
-    background: #1f53c5;
-    border: none;
-    padding: 12px;
-    color: white;
-    margin: 16px 0;
-    font-size: 16px;
-}
 
-form.label {
-    text-align: justify;
 
-}
-
-.Volver{
-    text-decoration: none;
-    border-radius: 20%;
-    background-color: rgba(0, 0, 0, 0);
-    margin-left: 50%;
-}
-
-.terminos{
-    text-align: center;
-    font-size: 30px;
-}
-
-.tituloterminos{
-    text-align: center;
-    text-shadow:2px 2px 2px 2px rgb(255, 255, 255) ;
-}
+   
